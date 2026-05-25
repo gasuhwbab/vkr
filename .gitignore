@@ -1,0 +1,24 @@
+# Local environments
+.venv/
+.venv311/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local tool/cache files
+.cache/
+.mplconfig/
+.DS_Store
+
+# Raw recordings and generated outputs
+archive/
+data/sessions/
+data/models/
+*.bag
+
+# Thesis materials not for publishing
+docs/
+vkr.md
+вкр.docx
+вкр.backup.docx

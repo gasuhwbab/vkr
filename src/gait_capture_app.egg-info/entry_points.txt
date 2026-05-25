@@ -1,0 +1,3 @@
+[console_scripts]
+gait-capture = gait_capture_app.ui:main
+gait-process-bag = gait_capture_app.offline:main

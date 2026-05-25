@@ -1,0 +1,6 @@
+numpy>=2.0
+matplotlib>=3.9
+
+[camera]
+pyrealsense2>=2.56
+mediapipe>=0.10.14

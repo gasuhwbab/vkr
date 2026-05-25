@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gait-capture-app"
+version = "0.1.0"
+description = "Desktop application for RGBD gait registration and result visualization"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+camera = [
+  "pyrealsense2>=2.56",
+  "mediapipe>=0.10.14",
+]
+
+[project.scripts]
+gait-capture = "gait_capture_app.ui:main"
+gait-process-bag = "gait_capture_app.offline:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
